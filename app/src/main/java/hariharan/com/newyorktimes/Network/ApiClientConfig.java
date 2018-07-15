@@ -8,7 +8,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
- * Created by hariharan on 14/07/18.
+ * Created by hariharan on 15/07/18.
  */
 
 public class ApiClientConfig {
@@ -26,7 +26,7 @@ public class ApiClientConfig {
         retrofit = new Retrofit.Builder()
                 .baseUrl(BASEURL)
                 .addConverterFactory(GsonConverterFactory.create(new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create()))
-                .client(client)
+//                .client(client)
                 .build();
 
         return retrofit;
